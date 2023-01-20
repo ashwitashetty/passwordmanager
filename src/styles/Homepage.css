@@ -1,0 +1,243 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #f5f7fb;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle {
+  height: 481px;
+  width: 839px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #20bbff 0%, #0e85ff 100%);
+  box-shadow: 0 8px 18px 10px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: row;
+}
+.rectangle-header {
+  border-right: 1px solid rgba(245, 247, 251, 0.125);
+  width: 334px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#big-logo {
+  height: 204px;
+  width: 176px;
+  margin-bottom: 20px;
+}
+#small-logo {
+  display: none;
+}
+.logo-text {
+  height: 54px;
+  width: 281px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.rectangle-body {
+  width: 504px;
+  display: flex;
+  flex-direction: column;
+}
+.upper-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sign-up-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sign-in-heading {
+  height: 27px;
+  width: 306px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.67px;
+  line-height: 27px;
+  text-align: center;
+  margin-top: 73px;
+  margin-bottom: 20px;
+}
+.sign-up {
+  height: 27px;
+  width: 306px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.67px;
+  line-height: 27px;
+  /* text-align: center; */
+  margin-top: 73px;
+  margin-bottom: 20px;
+}
+#sign-up-button {
+  display: flex;
+  margin: 36px 0px 50px 88px;
+}
+.lower-body {
+  height: 200px;
+  width: 333px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.forgot-password {
+  height: 19px;
+  /* width: 154px; */
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.no-account {
+  height: 19px;
+  width: 205px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+}
+.topbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(180deg, #20bbff 0%, #0e85ff 100%);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+  }
+  .rectangle {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  .rectangle-header {
+    display: flex;
+    width: 83%;
+    flex-direction: row;
+    border-right: none;
+  }
+  .rectangle-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .upper-body {
+    display: block;
+    justify-content: center;
+    align-items: none;
+    flex-direction: column;
+    padding: 0 30px;
+    margin-top: 7%;
+  }
+  #big-logo {
+    display: none;
+  }
+  #small-logo {
+    display: block;
+    height: 68px;
+    width: 179px;
+    margin-top: 10%;
+  }
+  .logo-text {
+    display: none;
+  }
+  .sign-in-heading {
+    display: none;
+  }
+  .topbar {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 5%; */
+    width: 100%;
+    border-bottom: 1px solid rgba(245, 247, 251, 0.125);
+
+  }
+  .lower-body {
+    height: 200px;
+    /* width: 370px; */
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    position: relative;
+    padding: 0 30px;
+}
+
+  .top-sign-in {
+    height: 35px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 27px;
+    border-bottom: 4px solid #ffa222;
+    margin-top: 24px;
+    text-decoration: none;
+  }
+  .forgot-password {
+    height: 19px;
+    width: 200px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-align: left;
+    margin-top: 10%;
+    margin-bottom: 30px;
+    
+  }
+  .no-account {
+  display: none;
+  }
+  .sign-up{
+    display: none;
+  }
+  #sign-up-button {
+    display: flex;
+    margin: 0;
+    padding: 0 30px;
+    margin-top: 7%;
+}
+}

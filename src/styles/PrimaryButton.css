@@ -1,0 +1,39 @@
+
+.input-box {
+  box-sizing: border-box;
+  height: 54px;
+  width: 332px;
+  border: 0.55px solid rgba(208, 208, 208, 0.5);
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin-top: 1rem;
+}
+.holder-style {
+  color: #787e8c;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .input-box {
+    box-sizing: border-box;
+    height: 54px;
+    width: 100%;
+    border: 0.55px solid rgba(208, 208, 208, 0.5);
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin-top: 7%;
+  }
+  .holder-style {
+    color: #787e8c;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding-left: 20px;
+  }
+}
