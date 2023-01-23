@@ -138,7 +138,6 @@
     background: linear-gradient(180deg, #20bbff 0%, #0e85ff 100%);
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
   }
   .rectangle {
     display: none;

@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Homepage from "../../screens/Homepage";
-import SignIn from "../../screens/SignIn";
-import SignUp from "../../screens/SignUp";
+import Homepage from "../screens/Homepage";
+import SignIn from "../screens/SignIn";
+import SignUp from "../screens/SignUp";
 
 const Navigator = () => {
   return (

@@ -1,6 +1,6 @@
 
 import './App.css';
-import Navigator from './components/navigation/Navigator';
+import Navigator from './navigation/Navigator';
 
 function App() {
   return (
