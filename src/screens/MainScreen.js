@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../components/Card";
 import InitialAdd from "../components/InitialAdd";
+import Modal from "../components/Modal";
 import "../styles/MainScreen.css";
 
 const MainScreen = () => {
+  const [toggleModal,setToggleModal]=useState(false)
   return (
     <div className="main-container">
       <div className="Side-menu">
@@ -12,6 +14,30 @@ const MainScreen = () => {
           src={require("../assets/images/burger_Menu.png")}
           alt="menu"
         />
+        <div className="header-mbl">
+          <img
+            id="pass-manager-logo"
+            src={require("../assets/images/PassManager.png")}
+            alt="icon"
+          />
+          <div className="search-sync-profile">
+            <img
+              src={require("../assets/images/search-white.png")}
+              alt="search"
+              id="search-white"
+            />
+            <img
+              src={require("../assets/images/sync_icn.png")}
+              alt="sync"
+              id="sync_icn"
+            />
+            <img
+              src={require("../assets/images/profile-white.png")}
+              alt="sync"
+              id="profile-white"
+            />
+          </div>
+        </div>
         <div className="sub-side-menu">
           <img
             id="home-icn"
@@ -54,6 +80,16 @@ const MainScreen = () => {
               className="add-btn"
               src={require("../assets/images/add_btn.png")}
               alt=""
+              onClick={()=>{setToggleModal(!toggleModal)}}
+            />
+          </div>
+          <div className="mbl-Social-Media">
+            <p id="media-text">Social Media </p>
+            <p id="media-number">07</p>
+            <img
+              id="media-drop"
+              src={require("../assets/images/drop-down.png")}
+              alt="drop-down"
             />
           </div>
         </div>
@@ -71,22 +107,19 @@ const MainScreen = () => {
             />
           </div>
           <div className="content-container">
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
           </div>
+          <img
+              className="main-add-btn"
+              src={require("../assets/images/add_btn.png")}
+              alt=""
+            />
+            <Modal toggleModal={toggleModal} setToggleModal={setToggleModal} />
         </div>
       </div>
     </div>
