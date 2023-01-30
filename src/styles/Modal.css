@@ -17,12 +17,13 @@
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     z-index: 1;
-    width: 94%;
-    height: 87.9%;
+    width: calc(100% - 130px);
+    /* height: 87.9%; */
+    height: calc(100% - 140px);
     position: fixed;
-    top: 138px;
-    left: 122px;
-    overflow: auto;
+    top: 140px;
+    left: 130px;
+    /* overflow: auto; */
     padding-top: 100px;
 }
 /* Modal content */
@@ -57,4 +58,14 @@
     height: 48px;
     width: 48px;
     /* transform: rotate(315deg); */
+}
+.main-heading{
+    height: 41px;
+  width: 119px;
+  color: #3C4857;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 41px;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import "../styles/Modal.css"
+import TextInput from './TextInput';
 const Modal = ({toggleModal,setToggleModal}) => {
      
      const divStyle = { 
@@ -22,6 +23,10 @@ const Modal = ({toggleModal,setToggleModal}) => {
                  onClick={ closeModal }>
                 <img className='close-button' src={require("../assets/images/close_btn.png")} alt="" />
              </span>
+             <div>
+               <p className='main-heading'>Add site</p>
+               <TextInput/>
+             </div>
           </div>
        </div>
      );
