@@ -1,71 +1,193 @@
-
-/* MODAL */
-/* Background effect. It covers the entire site */
-/* .modal {
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-    z-index: 1;
-    width: 100%; 
-    height: 100%; 
-    position: fixed; 
-    top: 0;
-    left: 0;
-    overflow: auto; 
-    padding-top: 80px; 
-} */
 .modal {
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    z-index: 1;
-    width: calc(100% - 130px);
-    /* height: 87.9%; */
-    height: calc(100% - 140px);
-    position: fixed;
-    top: 140px;
-    left: 130px;
-    /* overflow: auto; */
-    padding-top: 100px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  width: calc(100% - 130px);
+  /* height: 87.9%; */
+  height: calc(100% - 140px);
+  position: fixed;
+  top: 140px;
+  left: 130px;
+  padding-top: 100px;
 }
 /* Modal content */
 .modal-content {
-    background-color: white;
-    width: 70%;
-    max-width: 800px;
-    height: 70%;
-    margin: auto;
-    padding: 10px;
-    /* border: 1px solid black; */
-    border-radius: 20px;
-    position: relative;
+  background-color: white;
+  width: 70%;
+  max-width: 800px;
+  height: 75%;
+  margin: auto;
+  padding: 10px;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  position: relative;
 }
 /* Close button */
 .close {
-    color: #aaaaaa;
-    /* float: right; */
-    position: absolute;
-    right: -22px;
-    font-size: 25px;
-    font-weight: bold;
-    top: -27px;
+  color: #aaaaaa;
+  /* float: right; */
+  position: absolute;
+  right: -22px;
+  font-size: 25px;
+  font-weight: bold;
+  top: -27px;
 }
-.close:hover, 
+.close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
-.close-button{
-    height: 48px;
-    width: 48px;
-    /* transform: rotate(315deg); */
+.close-button {
+  height: 48px;
+  width: 48px;
+  /* transform: rotate(315deg); */
 }
-.main-heading{
-    height: 41px;
+.main-heading {
+  height: 41px;
   width: 119px;
-  color: #3C4857;
+  color: #3c4857;
   font-family: "Open Sans";
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 41px;
+  margin: 15px;
 }
+.modal-container {
+  /* border: 1px solid red; */
+  height: 100%;
+}
+.site-sector-container {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  justify-content: space-between;
+  width: 701px;
+}
+.url-content {
+  height: 80px;
+  width: 701px;
+  margin: 15px;
+  /* border: 1px solid red; */
+  margin-top: 40px;
+  /* padding:10px 15px; */
+}
+.url {
+  height: 24px;
+  width: 34px;
+  color: #949ca5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+  /* border: 1px solid red; */
+}
+.site-content {
+  /* height: 36px; */
+  height: 80px;
+  width: 341px;
+
+  /* margin-left: 15px; */
+}
+.site {
+  height: 24px;
+  /* width: 86px; */
+  color: #949ca5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+  /* border: 1px solid red; */
+}
+.sector-content {
+  /* height: 36px; */
+  height: 80px;
+  width: 340px;
+}
+.sector {
+  height: 24px;
+  width: 113px;
+  color: #949ca5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+  /* border: 1px solid red; */
+}
+.user-site-container {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  justify-content: space-between;
+  width: 701px;
+}
+.user-name-content {
+  /* height: 36px; */
+  width: 341px;
+  height: 80px;
+}
+.user-name {
+  height: 24px;
+  width: 95px;
+  color: #949ca5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.site-password-content {
+  /* height: 36px; */
+  width: 341px;
+  height: 80px;
+}
+.site-password {
+  height: 24px;
+  width: 117px;
+  color: #949ca5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.notes-content {
+  width: 701px;
+  margin: 15px;
+  /* border: 1px solid blue; */
+  height: 100px;
+}
+.notes {
+  height: 24px;
+  width: 50px;
+  color: #949ca5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.notes-area {
+  box-sizing: border-box;
+  max-height: 61px;
+  max-width: 701px;
+  border: 1px solid #f5f7fb;
+  border-radius: 4px;
+  background-color: #f5f7fb;
+  margin-top: 20px;
+  color: #3c4857;
+  font-family: "Open Sans";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+  padding:10px 15px;
+  
+}
+.button-container{
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content:space-between;
+ position: absolute;
+  width:390px;
+  right: 77px;
+  bottom: 15px;
+}
+

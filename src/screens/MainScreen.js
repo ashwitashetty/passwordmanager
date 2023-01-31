@@ -113,6 +113,12 @@ const MainScreen = () => {
             <Card />
             <Card />
             <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
           </div>
           <img
               className="main-add-btn"

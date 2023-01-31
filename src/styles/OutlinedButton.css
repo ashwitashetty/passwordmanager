@@ -1,0 +1,33 @@
+.outlined-button {
+  box-sizing: border-box;
+  height: 46px;
+  width: 181px;
+  border: 1px solid #0e85ff;
+  border-radius: 4px;
+  /* height: 24px;
+    width: 49px; */
+  background-color: #fff;
+  color: #0e85ff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+}
+.filled-button-modal {
+  height: 45px;
+  width: 180px;
+  border-radius: 4px;
+  background-color: #0e85ff;
+  /* height: 24px;
+    width: 41px; */
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+}
